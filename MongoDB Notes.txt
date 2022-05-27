@@ -1,0 +1,32 @@
+1.Setup
+>Install MongoDB
+>Set the path "C:\Program Files\MongoDB\Server\4.4\bin" in environment variables
+>Create folder /data/db in mongoDB folder
+>Type "  mongodb --dbpath "C:\Program Files\MongoDB\Server\4.4\data\db"     " in cmd to run it
+>Leave this cmd opened
+>In anothe cmd, type "mongo" to connect to mongoDB shell
+
+>To run mongoDB at backend -- net start MongoDB		//will only work when installed as a service at time of installation
+>To stop mongoDB at backend -- net stop MongoDB
+
+
+2.Working with MongoDB shell
+
+#show dbs 			//shows the databases
+#use shop			//connect to new database
+#db.products.insertOne({name:"A Book",price:12.99})					//inserting record in "products" collection 
+#db.products.find().pretty()					//view the data in collection
+#db.products.insertOne({name:"A T-Shirt",price:29.99,description:"This is high quality T-Shirt"})		//schemaless
+#db.products.insertOne({name:"A Computer",price:1229.99,description:"This is high quality Computer",details:{cpu:"Intel i7",memory:4}}) 			//nested one
+
+
+3.Undestanding Basics and CRUD Operations
+
+4.Schemas & Relations How to Structure Documents
+
+5.Exploring The Shell & The Server
+>dbpath
+>logpath
+>Configuration File
+
+6.MongoDB Compasss (GUI to handle MongoDB)
